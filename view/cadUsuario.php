@@ -26,13 +26,13 @@ $cadUser = new cUsuario();
     <body>
         <div class="form">
         <h1>Cadastro de Usuário</h1>
-        <form  action="<?php $cadUser->inserir() ?>"method="POST">
-            <form  method="POST">
-                <input type='text' name='nome' placeholder="Nome Aqui..."/>
+        <form autocomplete="off" action="<?php $cadUser->inserir() ?>"method="POST">
+            <form  method="POST" autocomplete="off">
+                <input type='text' autocomplete="off" name='nome' placeholder="Nome Aqui..."/>
                 <br><br>
-                <input type='email' name='email' placeholder="E-Mail Aqui..."/>
+                <input type='email' autocomplete="off" name='email' placeholder="E-Mail Aqui..."/>
                 <br><br>
-                <input type='password' name='pass' placeholder="Senha Aqui..."/>
+                <input type='password' autocomplete="off"  name='pass' placeholder="Senha Aqui..."/>
                 <br><br>
                 <input class="btn-hover color-1" type='submit' name='salvar' value='salvar'/>
                 <input class="btn-hover color-1" type='reset' name='limpar' value="limpar"/> 

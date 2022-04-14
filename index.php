@@ -17,62 +17,30 @@ if (isset($_SESSION['logadoT']) && $_SESSION['logadoT'] == true) {
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="view/indexphp.css" />
     <title>Menu</title>
-    <style>
-        .navbar {
-            background: cyan;
-            overflow: hidden;
-        }
-
-        .navbar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .navbar li a {
-            float: left;
-            line-height: 50px;
-            padding: 0 20px;
-            text-decoration: none;
-            color: #333;
-        }
-
-        .navbar li a:hover {
-            background-color: whitesmoke;
-            color: black;
-        }
-
-        footer{
-            text-align: center;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(45deg, cyan, DodgerBlue);
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul class="nav">
-                <li><a href="view/cadUsuario.php">Cadastro de Usuário</a></li>
-                <li><a href="view/cadPessoaF.php">Cadastro de Pessoa Física</a>
-                <li><a href="view/cadPessoaJ.php">Cadastro De Pessoa Jurídica</a>
-                </li>
-                <li><a href="index.php">Home</a>
-            </ul>
-            </li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="view/cadUsuario.php">Cadastro de Usuário</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Calculadora</a></li>
             </ul>
         </nav>
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="EX Calculadora..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+            </form>
+            <a href="https://blog.certisign.com.br/a-evolucao-dos-calculos-e-das-calculadoras/#:~:text=Criado%20pelos%20chineses%20no%20século,durante%20os%2024%20séculos%20seguintes">
+                <button>História Da Calculadora</button>
+            </a>
+        </nav>
     </header>
-
-    <img src="fundomenu.jpg" width="100%">
 </body>
-<footer>
-    <h4>Todos Direitos Reservados</h4>
-</footer>
+
 </html>

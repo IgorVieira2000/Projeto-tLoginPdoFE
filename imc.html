@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" type="text/css" href="view/imc.css" />
+    <script src="view/imc.js"></script>
+	<link rel="icon" type="image/x-icon" href="icons8-mais-ou-igual-a-2-50.png" />
+	<script
+	type="module"
+	src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+	nomodule
+	src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</head>
+<body>
+	<div class="fundo">
+	<h1>Calculadora IMC</h1>
+    <form class="form-centro">
+		<ul>
+			<li>
+			  <a href="index.html"><ion-icon name="home-sharp"></ion-icon></a>
+			</li>
+		  </ul>
+		<br/>
+		<fieldset>
+		<legend>Calcule o seu IMC.</legend>
+		<h4>Não use vírgulas!!!</h4>
+		<br/>
+		<label class="label-usuario">Dígite seu peso
+			<input class="input-usuario" type="text" id="peso">
+		</label>
+
+		<label class="label-usuario">Dígite sua altura
+			<input class="input-usuario type="text" id="altura">
+		</label>
+
+		<label class="label-resultado">Seu IMC é:
+			<input class="input-resultado" type="text" disabled id="seuImc">
+		</label>
+
+		<label class="label-resultado">Resultado:
+			<textarea class="resposta" disabled id="resultado"></textarea>
+		</label>
+        
+        <h2 class="botao" href="#" id="btnCalc">Calcular</h2>
+	</form>
+</div>
+<footer>Todos Direitos Reservados.</footer>
+</body>
+</html>
